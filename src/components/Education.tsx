@@ -10,7 +10,7 @@ import "../assets/styles/Timeline.scss";
 
 function Education() {
   return (
-    <div id="history">
+    <div id="education">
       <div className="items-container">
         <h1>Education</h1>
 
