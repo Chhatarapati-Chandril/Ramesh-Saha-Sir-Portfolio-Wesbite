@@ -1,65 +1,78 @@
 import React from "react";
-import '@fortawesome/free-regular-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import '../assets/styles/Timeline.scss'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import "../assets/styles/Timeline.scss";
 
 function Timeline() {
   return (
     <div id="history">
       <div className="items-container">
-        <h1>Career History</h1>
+        <h1>Employment History</h1>
+
         <VerticalTimeline>
+          {/* IIIT Sonepat */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
-            contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            date="September 2023 – Present"
+            contentStyle={{ background: "white", color: "rgb(39, 40, 34)" }}
+            contentArrowStyle={{ borderRight: "7px solid white" }}
+            iconStyle={{ background: "#5000ca", color: "#fff" }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+            <h3 className="vertical-timeline-element-title">
+              Assistant Professor
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Indian Institute of Information Technology (IIIT), Sonepat, Haryana
+            </h4>
             <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
+              <strong>Department:</strong> Computer Science and Engineering<br />
+              <strong>Institution Type:</strong> Institute of National Importance (Govt. of India)
             </p>
           </VerticalTimelineElement>
+
+          {/* VIT Bhopal */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2022"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            date="April 2022 – August 2023"
+            iconStyle={{ background: "#5000ca", color: "#fff" }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">
+              Assistant Professor
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              VIT Bhopal University, Madhya Pradesh
+            </h4>
             <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
+              <strong>Department:</strong> Computer Science and Engineering<br />
+              <strong>School:</strong> School of Computing Science and Engineering (SCSE)<br />
+              <strong>Institution Type:</strong> Private Autonomous University
             </p>
           </VerticalTimelineElement>
+
+          {/* Gauhati University */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2021 - 2021"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            date="September 2018 – September 2021"
+            iconStyle={{ background: "#5000ca", color: "#fff" }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">
+              Assistant Professor
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Gauhati University, Assam
+            </h4>
             <p>
-              Full-stack Development, API Development, User Experience
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020 - 2020"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
-            <p>
-              Automation, Data Governance, Statistical Analysis
+              <strong>Department:</strong> Information Technology<br />
+              <strong>Institute:</strong> Gauhati University Institute of Science and Engineering (GUIST)<br />
+              <strong>Scheme:</strong> TEQIP-III (MHRD, Govt. of India)
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>

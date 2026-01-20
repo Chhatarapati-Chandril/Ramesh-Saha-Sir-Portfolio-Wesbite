@@ -3,6 +3,7 @@ import {
   Main,
   Timeline,
   Expertise,
+  Education,
   Project,
   Contact,
   Navigation,
@@ -31,8 +32,9 @@ function App() {
         <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
         <FadeIn transitionDuration={700}>
             <Main/>
-            <Expertise/>
             <Timeline/>
+            <Education/>
+            <Expertise/>
             <Project/>
             <Contact/>
         </FadeIn>
