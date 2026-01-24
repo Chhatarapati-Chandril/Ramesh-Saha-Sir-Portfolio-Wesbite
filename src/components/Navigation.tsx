@@ -15,6 +15,9 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
+import Avatar from "@mui/material/Avatar";
+
+import ProfileImg from "../assets/images/avatar.png"; // 🔹 temporary image
 
 const drawerWidth = 240;
 
@@ -62,6 +65,13 @@ function Navigation({ parentToChild, modeChange }: NavigationProps) {
     }
   };
 
+  const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
   const drawer = (
     <Box
       className="navigation-bar-responsive"
@@ -95,8 +105,10 @@ function Navigation({ parentToChild, modeChange }: NavigationProps) {
         component="nav"
         id="navigation"
         className={`navbar-fixed-top${scrolled ? " scrolled" : ""}`}
+        elevation={scrolled ? 4 : 0}
       >
-        <Toolbar className="navigation-bar">
+        <Toolbar className="navigation-bar" sx={{ minHeight: 70 }}>
+
           {/* Mobile menu */}
           <IconButton
             aria-label="open drawer"
@@ -110,32 +122,78 @@ function Navigation({ parentToChild, modeChange }: NavigationProps) {
           {/* Theme toggle */}
           {mode === "dark" ? (
             <LightModeIcon
-              role="button"
-              aria-label="Switch to light mode"
               onClick={modeChange}
               sx={{ cursor: "pointer", color: "#fff" }}
             />
           ) : (
             <DarkModeIcon
-              role="button"
-              aria-label="Switch to dark mode"
               onClick={modeChange}
               sx={{ cursor: "pointer", color: "#fff" }}
             />
           )}
 
-          {/* Desktop menu */}
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          {/* Centered Desktop Menu */}
+          <Box
+            sx={{
+              display: { xs: "none", sm: "flex" },
+              flexGrow: 1,
+              justifyContent: "center",
+              gap: 2,
+            }}
+          >
             {navItems.map(([label, target]) => (
               <Button
                 key={label}
                 onClick={() => scrollToSection(target)}
-                sx={{ color: "#fff" }}
+                sx={{
+                  color: "#fff",
+                  fontWeight: 500,
+                  textTransform: "none",
+                  position: "relative",
+                  "&::after": {
+                    content: '""',
+                    position: "absolute",
+                    width: "0%",
+                    height: "2px",
+                    bottom: 0,
+                    left: "50%",
+                    backgroundColor: "#fff",
+                    transition: "all 0.3s ease",
+                  },
+                  "&:hover::after": {
+                    width: "100%",
+                    left: 0,
+                  },
+                }}
               >
                 {label}
               </Button>
             ))}
           </Box>
+
+          {/* Rightmost Profile Image */}
+       <Avatar
+  src={ProfileImg}
+  alt="Profile"
+  onClick={scrollToTop}
+  imgProps={{
+    style: {
+      objectPosition: "center top",
+    },
+  }}
+  sx={{
+    width: 40,
+    height: 40,
+    cursor: "pointer",
+    border: "2px solid rgba(255,255,255,0.7)",
+    ml: 2,
+    transition: "transform 0.2s ease",
+    "&:hover": {
+      transform: "scale(1.05)",
+    },
+  }}
+/>
+
         </Toolbar>
       </AppBar>
 
