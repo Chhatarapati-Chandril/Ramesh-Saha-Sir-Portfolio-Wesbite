@@ -31,7 +31,6 @@ function Education() {
             <p>
               <strong>Discipline:</strong> Computer Science and Engineering<br />
               <strong>Thesis:</strong> Study on QOS provisioning of remote healthcare monitoring using WBAN and VANET<br />
-              <strong>Degree Awarded:</strong> 26th June, 2021
             </p>
           </VerticalTimelineElement>
 
@@ -49,7 +48,6 @@ function Education() {
             <p>
               <strong>Discipline:</strong> Multimedia and Software Systems (CSE Department)<br />
               <strong>Thesis:</strong> Studies on Rough Set Theory for Finding Minimal Reduct of Large Decision System<br />
-              <strong>Degree Awarded:</strong> 11th August, 2015
             </p>
           </VerticalTimelineElement>
 
@@ -67,7 +65,6 @@ function Education() {
             <p>
               <strong>Discipline:</strong> Information Technology<br />
               <strong>Thesis:</strong> PCA-Driven Face Regeneration: A Novel Approach in Image Processing<br />
-              <strong>Degree Awarded:</strong> 27th July, 2013
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
