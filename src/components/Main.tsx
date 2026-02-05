@@ -16,7 +16,7 @@ function Main() {
       <div className="about-section">
         <div className="image-wrapper">
           <img
-            src="https://res.cloudinary.com/chandril/image/upload/v1768934828/ramesh_saha_sir_pic_vee7z4.jpg"
+            src="https://res.cloudinary.com/chandril/image/upload/v1770318943/ramesh_saha_sir_pic_mvubf0.jpg"
             alt="Dr. Ramesh Saha"
           />
         </div>

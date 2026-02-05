@@ -9,16 +9,17 @@ import Project from "./components/Project";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import FadeIn from "./components/FadeIn";
+import ResearchPapers from "./components/ResearchPapers";
 
 import "./index.scss";
 
 type ThemeMode = "light" | "dark";
 
 function App() {
-  const [mode, setMode] = useState<ThemeMode>("dark");
+  const [mode, setMode] = useState<ThemeMode>("light");
 
   const handleModeChange = () => {
-    setMode((prev) => (prev === "dark" ? "light" : "dark"));
+    setMode((prev) => (prev === "light" ? "dark" : "light"));
   };
 
   useEffect(() => {
@@ -43,6 +44,7 @@ function App() {
         <Education />
         <Expertise />
         <Project />
+        <ResearchPapers />
         <Contact />
       </FadeIn>
 
