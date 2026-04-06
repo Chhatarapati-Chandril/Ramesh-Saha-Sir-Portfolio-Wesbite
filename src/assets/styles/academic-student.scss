@@ -1,0 +1,57 @@
+.section-container {
+  padding: 80px 20px;
+  transition: all 0.3s ease;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  p {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+
+  ul {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 2;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+}
+
+/* ✅ LIGHT MODE */
+.light-mode .section-container {
+  color: #000;
+  background: #fff;
+
+  th {
+    background: #f5f5f5;
+  }
+}
+
+/* ✅ DARK MODE */
+.dark-mode .section-container {
+  color: #fff;
+  background: #121212;
+
+  th {
+    background: #1e1e1e;
+  }
+
+  td {
+    border-color: #444;
+  }
+}
