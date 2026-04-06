@@ -27,6 +27,8 @@ const navItems: [string, string][] = [
   ["Expertise", "expertise"],
   ["Projects", "projects"],
   ["Research-Publications", "research-publications"],
+  ["Academic Service", "academic-service"],
+  ["Student Supervision" , "student-supervison"],
   ["Contact", "contact"],
 ];
 

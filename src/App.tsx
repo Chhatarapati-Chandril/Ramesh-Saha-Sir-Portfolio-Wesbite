@@ -10,6 +10,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import FadeIn from "./components/FadeIn";
 import ResearchPapers from "./components/ResearchPapers";
+import AcademicService from "./components/AcademicService";
+import StudentSupervison from "./components/StudentSupervison";
 
 import "./index.scss";
 
@@ -45,6 +47,8 @@ function App() {
         <Expertise />
         <Project />
         <ResearchPapers />
+        <AcademicService/>
+        <StudentSupervison />
         <Contact />
       </FadeIn>
 
