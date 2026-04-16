@@ -18,7 +18,6 @@ function Education() {
           {/* Ph.D. */}
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="2021"
             contentStyle={{ background: "white", color: "rgb(39, 40, 34)" }}
             contentArrowStyle={{ borderRight: "7px solid white" }}
             iconStyle={{ background: "#5000ca", color: "#fff" }}
@@ -37,7 +36,6 @@ function Education() {
           {/* M.Tech */}
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="2015"
             iconStyle={{ background: "#5000ca", color: "#fff" }}
             icon={<FontAwesomeIcon icon={faGraduationCap} />}
           >
@@ -54,7 +52,6 @@ function Education() {
           {/* B.Tech */}
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="2013"
             iconStyle={{ background: "#5000ca", color: "#fff" }}
             icon={<FontAwesomeIcon icon={faGraduationCap} />}
           >

@@ -553,25 +553,6 @@ export default function ResearchPapers() {
               </li>
             ))}
           </ol>
-          {/* Communicated / Under Review Papers */}
-          <h2>Communicated Papers / Under Review</h2>
-          <ol>
-            {underReviewPapers.map((item, index) => (
-              <li key={index}>
-                <strong>{item.authors}</strong>, “{item.title},”{" "}
-                {item.venueType}, <em>{item.status}</em>
-                {item.url && (
-                  <>
-                    {" "}
-                    —{" "}
-                    <a href={item.url} target="_blank" rel="noreferrer">
-                      Link
-                    </a>
-                  </>
-                )}
-              </li>
-            ))}
-          </ol>
         </section>
       </div>
     </div>

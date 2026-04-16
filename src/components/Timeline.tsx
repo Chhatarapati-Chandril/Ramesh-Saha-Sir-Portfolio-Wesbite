@@ -18,7 +18,6 @@ function Timeline() {
           {/* IIIT Sonepat */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="September 2023 – Present"
             contentStyle={{ background: "white", color: "rgb(39, 40, 34)" }}
             contentArrowStyle={{ borderRight: "7px solid white" }}
             iconStyle={{ background: "#5000ca", color: "#fff" }}
@@ -39,7 +38,6 @@ function Timeline() {
           {/* VIT Bhopal */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="April 2022 – August 2023"
             iconStyle={{ background: "#5000ca", color: "#fff" }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
@@ -59,7 +57,6 @@ function Timeline() {
           {/* Gauhati University */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="September 2018 – September 2021"
             iconStyle={{ background: "#5000ca", color: "#fff" }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
