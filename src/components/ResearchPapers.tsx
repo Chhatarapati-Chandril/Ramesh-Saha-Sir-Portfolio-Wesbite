@@ -352,14 +352,6 @@ const books: Book[] = [
   },
 ];
 
-type UnderReviewPaper = {
-  authors: string;
-  title: string;
-  venueType: "Journal" | "Conference";
-  status: string;
-  url?: string;
-};
-
 export default function ResearchPapers() {
   return (
     <div
